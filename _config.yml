@@ -22,6 +22,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  wknd
 
+#collections settings
+#collections_dir: collections # setting the collections_dir does not seem to work as advertised
+
+collections:
+  knowledge_base:
+    output: true
+    permalink: /:collection/:path
+ 
+
+
+
 # Build settings
 markdown: kramdown
 #theme: minima, removed gem-based theme, made it local
