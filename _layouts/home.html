@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index-default
 ---
 
 <div class="home">
@@ -9,8 +9,23 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+
+    <li class="post-entry post-newest">
+
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <span class="post-meta">{{ site.posts[0].date | date: date_format }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ site.posts[0].title | escape }}</a>
+    </h2>
+</li>
+    {% for post in site.posts offset:1 %}
+    {% if post.featured == true and featured != true %}
+    {% assign featured= true %}
+      <li class="post-entry post-featured">
+    {% else %}
+      <li class="post-entry">
+    {% endif %}
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
