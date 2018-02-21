@@ -1,41 +1,60 @@
 ---
 layout: index-default
 ---
-
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
   {{ content }}
-
   <ul class="post-list">
+{%- if site.posts[0].image.global -%}
+    {%- capture imagePath %}/assets/images/global/{{ site.posts[0].image.name }}{% endcapture -%}
+{%- else -%}
+    {%- capture imagePath %}/assets/images/posts/{{ site.posts[0].date | date: "%Y-%m-%d" }}-{{ site.posts[0].title | slugify }}/{{ site.posts[0].image.name }}{% endcapture -%}
+{%- endif -%}
 
     <li class="post-entry post-newest">
-
-    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-    <span class="post-meta">{{ site.posts[0].date | date: date_format }}</span>
+    <div class="post-image"{% if site.posts[0].image %} style="background-image: url({{ imagePath }});"{% endif %}>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-date">{{ site.posts[0].date | date: date_format }}</span>
 
     <h2>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ site.posts[0].title | escape }}</a>
+      <a class="post-title" href="{{ site.posts[0].url | relative_url }}">{{ site.posts[0].title | escape }}</a>
     </h2>
+        <div class="post-author">Written by <a href="{{ site.posts[0].author.page }}">{{ site.posts[0].author.name }}</a></div>
+    </div>
+    <div class="post-description">
+{{ site.posts[0].excerpt }}
+    </div>
 </li>
     {% for post in site.posts offset:1 %}
+{%- if post.image.global -%}
+    {%- capture imagePath %}/assets/images/global/{{ post.image.name }}{% endcapture -%}
+{%- else -%}
+    {%- capture imagePath %}/assets/images/posts/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title | slugify }}/{{ post.image.name }}{% endcapture -%}
+{%- endif -%}
+
+
     {% if post.featured == true and featured != true %}
     {% assign featured= true %}
       <li class="post-entry post-featured">
     {% else %}
       <li class="post-entry">
     {% endif %}
+    <div class="post-image" href="{{ post.url | relative_url }}"{% if post.image %} style="background-image: url({{ imagePath }});"{% endif %}>
+
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-date">{{ post.date | date: date_format }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        <div class="post-author">Written by <a href="{{ post.author.page }}">{{ post.author.name }}</a></div>
+    </div>
+
+    <div class="post-description">
+{{ post.excerpt }}
+    </div>
+
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>

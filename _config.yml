@@ -15,12 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: wknd.github.io
 email: weekend@hackthissite.org
-description: >- # this means to ignore newlines until "baseurl:"
-  This small site is to help organize my study material in a logical format.
+author: weekend
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
-github_username:  wknd
+github_username:  "wknd"
+github_repo: "https://github.com/wknd/wknd.github.io"
+
 
 #collections settings
 #collections_dir: collections # setting the collections_dir does not seem to work as advertised
@@ -30,8 +32,18 @@ collections:
     output: true
     permalink: /:collection/:path
  
-
-
+defaults:
+ - 
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    image:
+      name: "neon-test1.jpg"
+      global: true
+    author:
+      name: "weekend"
+      page: "/author/weekend.html"
 
 # Build settings
 markdown: kramdown

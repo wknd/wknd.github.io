@@ -11,7 +11,12 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   
 {% capture styles %}
-{% include inlinecss.scss %}
+@import
+  "settings",
+  "styles/base",
+  "styles/header",
+  "styles/index"
+;
 {% endcapture %}
 
 <style>
