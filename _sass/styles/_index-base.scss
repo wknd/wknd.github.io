@@ -24,7 +24,7 @@
   justify-content: stretch;
 }
 .post-entry {
-  background-color: $background-selection;
+  background-color: $background-light;
   .post-image {
     position: relative;
     display: block;
@@ -42,8 +42,8 @@
     display: inline-block;
     padding: ($spacing-unit / 4);
     text-decoration: none;
-    background-color: transparentize($comment-color, 0.25);
-    color: $tags;
+    background-color: transparentize($background, 0.25);
+    color: $flash1;
     @include on-tablet {
       @include relative-font-size(1.5);
     }
@@ -53,20 +53,21 @@
   }
   .post-date {
     display: inline-block;
-    background-color: $tags;
-    color: $comment-color;
+    background-color: $flash1;
+    color: $background;
 
   }
   .post-author {
     float: right;
     position: absolute;
     bottom: ($spacing-unit / 6);
-    right: $spacing-unit;
+    right: $spacing-unit / 2;
     padding: ($spacing-unit / 4);
-    background-color: $tags;
+    background-color: transparentize($background, 0.25);
+    color: $foreground;
     a {
       text-decoration: none;
-      color: $comment-color;
+      color: $flash1;
     }
   }
 

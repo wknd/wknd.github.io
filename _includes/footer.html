@@ -7,5 +7,14 @@
     {%- if site.github_repo %} is available on <a href="{{ site.github_repo }}">github.com</a>
     {%- endif -%}<br />
   </div>
+{%- if layout.origin == "index" -%}
+<link rel="stylesheet" href="{{ "/assets/index.css" | relative_url }}">
+{%- elsif layout.origin == "post" -%}
+<link rel="stylesheet" href="{{ "/assets/post.css" | relative_url }}">
+{%- elsif layout.origin == "page" -%}
+<link rel="stylesheet" href="{{ "/assets/page.css" | relative_url }}">
+{%- else -%}
+<link rel="stylesheet" href="{{ "/assets/default.css" | relative_url }}">
+{%- endif -%}
 
 </footer>

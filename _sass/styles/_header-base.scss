@@ -1,6 +1,6 @@
 .site-header {
   display: block;
-  border-bottom: 1px solid $foreground;
+  border-bottom: 1px solid $flash1;
   background-color: $background-light;
   min-height: $spacing-unit * 1.8;
   position: relative;
@@ -21,7 +21,7 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-
+  z-index: 2;
   .nav-trigger {
     display: none;
   }
@@ -43,7 +43,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-selection;
+    background-color: $background-light;
     border: 1px solid $foreground;
     @include border-radius(5px);
     text-align: right;

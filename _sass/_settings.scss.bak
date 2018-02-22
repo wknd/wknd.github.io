@@ -29,32 +29,22 @@ $base0D: #3777E6;
 $base0E: #AD00A1;
 $base0F: #CC6633;
 
-
-$background: $base01 !default;
-$background-light: $base02 !default;
-$foreground: $base04 !default;
-$foreground-light: $base05 !default;
-//$flash1: $base08 !default;
-$flash1: $base0E !default;
-$flash2: $base0B !default;
-$flash3: $base0E !default;
-
-//$background: $base00 !default;
-//$background-light: $base01 !default;
-//$background-selection: $base02 !default;
-//$comment-color: $base03 !default;
-//$foreground-dark: $base04 !default;
-//$foreground: $base05 !default;
-//$foreground-light: $base06 !default;
-//$foreground-light2: $base07 !default;
-//$variables: $base08 !default;
-//$integers: $base09 !default;
-//$classes: $base0A !default;
-//$strings: $base0B !default;
-//$quotes: $base0C !default;
-//$functions: $base0D !default;
-//$keywords: $base0E !default;
-//$tags: $base0F !default;
+$background: $base00 !default;
+$background-light: $base01 !default;
+$background-selection: $base02 !default;
+$comment-color: $base03 !default;
+$foreground-dark: $base04 !default;
+$foreground: $base05 !default;
+$foreground-light: $base06 !default;
+$foreground-light2: $base07 !default;
+$variables: $base08 !default;
+$integers: $base09 !default;
+$classes: $base0A !default;
+$strings: $base0B !default;
+$quotes: $base0C !default;
+$functions: $base0D !default;
+$keywords: $base0E !default;
+$tags: $base0F !default;
 
 // Width of the content area
 $content-width:    1500px !default;

@@ -10,6 +10,9 @@ header, section, footer, aside, nav, main, article, figure {
   vertical-align: baseline;
   background: transparent;
 }
+html {
+    background-color: $background;
+}
 .wrapper {
   // spacing of half a unit for small devices on both sides, 1 unit if its big enough
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
