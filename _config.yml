@@ -15,7 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: "secur.ity-pro.be"
 email: weekend@hackthissite.org
-author: weekend
+author:
+  name: weekend
+  page: "/author/weekend.html"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -39,8 +41,10 @@ defaults:
       name: "l24Wzpq.jpg"
       global: true
     author:
-      name: "weekend"
+      name: weekend
       page: "/author/weekend.html"
+
+
 
 # Build settings
 markdown: kramdown

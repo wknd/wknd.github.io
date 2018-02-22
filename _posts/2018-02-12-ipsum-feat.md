@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ipsum featured"
+title:  "ipsum featured, long title is long. so very very very looooooooooooooong"
 date:   2018-02-12 17:58:09 +0100
 featured: true
 categories: blog

@@ -7,22 +7,16 @@ origin: "post"
     {%- capture imagePath %}/assets/images/global/{{ page.image.name }}{% endcapture -%}
 {%- else -%}
     {%- capture imagePath %}/assets/images/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ page.image.name }}{% endcapture -%}
-{%- endif -%}
-
-  <header class="post-header"> {% if page.image %} 
-    <figure class="post-image">
-      <img src="{{ imagePath }}" />
-    </figure>
-    {% endif %}
+{%- endif %}
+  <header class="post-header">{%- if page.image %}
+    <img class="post-head-image" src="{{ imagePath }}" />{%- endif %}
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author.name }}</span></span>
-      {% endif %}</p>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{- page.date | date: date_format -}}
+    </time>{%- if page.author %}
+    <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">Written by <a href="{{post.author.page}}"><span itemprop="name">{{ page.author.name }}</span></a></span>
+    {%- endif %}
   </header>
 
   <div class="post-content" itemprop="articleBody">

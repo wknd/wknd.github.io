@@ -4,25 +4,56 @@
     padding: 0px;
 }
 .post-header {
+  position: relative;
   background-color: $background-light;
-  .post-image {
-   img{ margin: 0px;
-   max-width:100%;
-   min-width:100%;
-   height:auto;
-}
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px $spacing-unit / 2;
+  width: 100%;
+  .post-head-image {
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;    
+  }
+  .post-title {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    @include relative-font-size(2);
+    color: $flash1;
+    background-color: transparentize($background, 0.15);
+    padding: ($spacing-unit / 4) ($spacing-unit / 2) ($spacing-unit / 4);
+ 
+    @include on-tablet {
+      @include relative-font-size(2.25);
+    }
+    @include on-laptop {
+      @include relative-font-size(2.625);
+    }
+  }
+  .post-date {
+    display: inline-block;
+    background-color: $flash1;
+    color: $background;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
+  }
+  .post-author {
+    display: inline-block;
+    background-color: transparentize($background, 0.25);
+    color: $foreground;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
+    a {
+        text-decoration: none;
+        color: $flash1;
+    }
   }
 }
-.post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
-  color: $flash1;
-  @include on-tablet {
-    @include relative-font-size(2.25);
-  }
-  @include on-laptop {
-    @include relative-font-size(2.0);
-  }
-}
-    
