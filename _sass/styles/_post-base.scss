@@ -1,6 +1,28 @@
 .post {
     margin-top: $spacing-unit;
     background-color: $background-light;
-    padding: $spacing-unit / 2;
-
+    padding: 0px;
 }
+.post-header {
+  background-color: $background-light;
+  .post-image {
+   img{ margin: 0px;
+   max-width:100%;
+   min-width:100%;
+   height:auto;
+}
+  }
+}
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+  color: $flash1;
+  @include on-tablet {
+    @include relative-font-size(2.25);
+  }
+  @include on-laptop {
+    @include relative-font-size(2.0);
+  }
+}
+    

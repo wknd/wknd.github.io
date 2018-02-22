@@ -36,7 +36,7 @@ defaults:
     type: "posts"
   values:
     image:
-      name: "neon-test1.jpg"
+      name: "l24Wzpq.jpg"
       global: true
     author:
       name: "weekend"

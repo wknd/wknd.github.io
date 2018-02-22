@@ -3,8 +3,17 @@ layout: default
 origin: "post"
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+{%- if page.image.global -%}
+    {%- capture imagePath %}/assets/images/global/{{ page.image.name }}{% endcapture -%}
+{%- else -%}
+    {%- capture imagePath %}/assets/images/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ page.image.name }}{% endcapture -%}
+{%- endif -%}
 
-  <header class="post-header">
+  <header class="post-header"> {% if page.image %} 
+    <figure class="post-image">
+      <img src="{{ imagePath }}" />
+    </figure>
+    {% endif %}
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

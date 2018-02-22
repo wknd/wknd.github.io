@@ -10,8 +10,12 @@ header, section, footer, aside, nav, main, article, figure {
   vertical-align: baseline;
   background: transparent;
 }
-html {
-    background-color: $background;
+body {
+  background-color: $background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .wrapper {
   // spacing of half a unit for small devices on both sides, 1 unit if its big enough
@@ -36,17 +40,18 @@ html {
 }
 
 .page-content {
-    display: inline-block;
-    width: 100%;
-     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 0px 0px;
-    padding-bottom: $spacing-unit * 2;
-    background-image: url(/assets/images/global/cross-street_francesco.lorenzetti.jpg);
-    background-attachment: fixed;
-    background-origin: content-box;
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0px 0px;
+  padding-bottom: $spacing-unit * 2;
+  background-image: url(/assets/images/global/cross-street_francesco.lorenzetti.jpg);
+  background-attachment: fixed;
+  background-origin: content-box;
 }
