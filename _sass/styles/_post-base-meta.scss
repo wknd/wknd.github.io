@@ -7,10 +7,16 @@
 }
 .post-title {
   position: absolute;
+  display: inline-block;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
   bottom: 0px;
   margin: 0px;
   left: 0px;
   right: 0px;
+  max-width: 100%;
   @include relative-font-size(2);
   color: $flash1;
   background-color: transparentize($background, $transparent);

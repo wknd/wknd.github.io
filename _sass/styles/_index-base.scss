@@ -41,20 +41,19 @@
     margin: 0px;
     list-style: none;
   }
-
   .post-click {
     flex-grow: 1;
     display: inline-block;
-    z-index: 2;
+    z-index: 1;
   }
   .post-title {
     position: absolute;
+    box-sizing: border-box;
     top: 0px;
     left: 0px;
     bottom: auto;
     right: auto;
     text-decoration: none;
-    z-index: 3; 
     @include relative-font-size(1.2);
     @include on-tablet {
       @include relative-font-size(1.5);

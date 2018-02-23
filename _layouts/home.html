@@ -48,10 +48,10 @@ origin: "index"
          <h2>
            <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
          </h2>
-        <a class="post-click" href="{{ site.posts[0].url | relative_url }}"></a>
-        <div>
-        <span class="post-date">{{ post.date | date: date_format }}</span>
-        <div class="post-author">Written by <a href="{{ post.author.page }}">{{ post.author.name }}</a></div>
+        <a class="post-click" href="{{ post.url | relative_url }}"></a>
+         <div>
+          <span class="post-date">{{ post.date | date: date_format }}</span>
+          <div class="post-author">Written by <a href="{{ post.author.page }}">{{ post.author.name }}</a></div>
         </div>
     </div>
 
