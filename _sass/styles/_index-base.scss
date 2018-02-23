@@ -4,8 +4,8 @@
     padding: $spacing-unit / 2;
 }
 .post-list {
-  display: grid;
   list-style: none;
+  display: grid;
   
   grid-template-columns: 1fr;
   grid-gap: ($spacing-unit / 2) ($spacing-unit / 2);
@@ -26,6 +26,7 @@
 .post-entry {
   background-color: $background-light;
   color: $foreground;
+  height: 100%;
   .post-image {
     position: relative;
     display: flex;
@@ -82,7 +83,7 @@
       height: 100%;
     }
     .post-description {
-      display: none;
+      display: none !important;
     }
     .post-title {
       @include relative-font-size(2.0);
@@ -102,7 +103,7 @@
       height: 100%;
     }
     .post-description {
-      display: none;
+      display: none !important;
     }
   }
 }
