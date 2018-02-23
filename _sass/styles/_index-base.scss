@@ -45,10 +45,19 @@
     flex-grow: 1;
     display: inline-block;
     z-index: 1;
+    margin: 0px;
+    padding: 0px;
   }
   .post-title {
     position: absolute;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+
     top: 0px;
     left: 0px;
     bottom: auto;
