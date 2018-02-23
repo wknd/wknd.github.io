@@ -28,7 +28,8 @@
   color: $foreground;
   .post-image {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-height: 250px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -39,9 +40,18 @@
     margin: 0px;
     list-style: none;
   }
-  .post-title {
+
+  .post-click {
+    flex-grow: 1;
     display: inline-block;
-    position: static;
+    z-index: 2;
+  }
+  .post-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
     text-decoration: none;
     z-index: 3; 
     @include relative-font-size(1.2);
@@ -54,16 +64,12 @@
 
   }
   .post-date {
-    bottom: 0px;
-    left: 0px;
-    top: auto;
-    right: auto;
+    position: static;
+    float: left;
   }
   .post-author {
-    bottom: 0px;
-    right: 0px;
-    top: auto;
-    left: auto;
+    position: static;
+    float: right;
   }
  
 }
