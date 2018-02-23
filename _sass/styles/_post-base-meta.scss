@@ -31,6 +31,8 @@
   color: $background;
   position: absolute;
   top: 0px;
+  bottom: auto;
+  left: auto;
   right: 0px;
   padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
 }
@@ -42,6 +44,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  bottom: auto;
+  right: auto;
   padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
   a {
     text-decoration: none;
