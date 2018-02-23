@@ -7,8 +7,6 @@ $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
-$transparent:    0.25;
-
 
 $spacing-unit:     30px !default;
 
@@ -35,11 +33,13 @@ $base0F: #CC6633;
 $background: $base01 !default;
 $background-light: $base02 !default;
 $foreground: $base04 !default;
+
+
 $foreground-light: $base05 !default;
 //$flash1: $base08 !default;
 $flash1: $base0E !default;
 $flash2: $base0B !default;
-$flash3: $base08 !default;
+$flash3: $base0E !default;
 
 //$background: $base00 !default;
 //$background-light: $base01 !default;

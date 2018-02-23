@@ -17,43 +17,50 @@
     width: 100%;
     height: auto;    
   }
-  .post-title {
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    @include relative-font-size(2);
-    color: $flash1;
-    background-color: transparentize($background, 0.15);
-    padding: ($spacing-unit / 4) ($spacing-unit / 2) ($spacing-unit / 4);
- 
-    @include on-tablet {
-      @include relative-font-size(2.25);
-    }
-    @include on-laptop {
-      @include relative-font-size(2.625);
-    }
+}
+.post-content {
+  color: $foreground;
+  padding: $spacing-unit / 2;
+  p {
+    padding-top: $spacing-unit / 3;
+    padding-bottom: $spacing-unit / 2;
   }
-  .post-date {
-    display: inline-block;
-    background-color: $flash1;
+  blockquote {
+    border-left: $flash1;
+    border-left: 5px solid $flash1;
+    background-color: $background;
+    padding: $spacing-unit / 4;
+  }
+  blockquote p {
+    display: inline;
+  }
+
+  h1 {
+    @include relative-font-size(2.7);
     color: $background;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
+    background-color: $flash1;
+    text-align: center;
   }
-  .post-author {
-    display: inline-block;
-    background-color: transparentize($background, 0.25);
-    color: $foreground;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding: ($spacing-unit / 6) ($spacing-unit / 3) ($spacing-unit / 6);
-    a {
-        text-decoration: none;
-        color: $flash1;
-    }
+  h2 {
+    @include relative-font-size(2.4);
   }
+  h3 {
+    @include relative-font-size(2.1);
+  }
+  h4 {
+    @include relative-font-size(1.8);
+  }
+  h5 {
+    @include relative-font-size(1.5);
+  }
+  h6 {
+    @include relative-font-size(1.2);
+  }
+  ol {
+    list-style-position: inside;
+  }
+  ul {
+    list-style-position: inside;
+  }
+
 }

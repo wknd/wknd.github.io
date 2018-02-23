@@ -1,6 +1,6 @@
 .home {
     margin-top: $spacing-unit;
-    background-color: transparentize($background-light, $transparent);
+    background-color: transparentize($background-light, 0.25);
     padding: $spacing-unit / 2;
 }
 .post-list {
@@ -41,37 +41,42 @@
   }
   .post-title {
     display: inline-block;
-    position: static;
+    padding: ($spacing-unit / 4);
     text-decoration: none;
-    z-index: 3; 
-    @include relative-font-size(1.2);
+    background-color: transparentize($background, 0.25);
+    color: $flash1;
     @include on-tablet {
       @include relative-font-size(1.5);
     }
     @include on-laptop {
       @include relative-font-size(2.0);
     }
-
   }
   .post-date {
-    bottom: 0px;
-    left: 0px;
-    top: auto;
-    right: auto;
+    display: inline-block;
+    background-color: $flash1;
+    color: $background;
+
   }
   .post-author {
-    bottom: 0px;
-    right: 0px;
-    top: auto;
-    left: auto;
+    position: absolute;
+    bottom: ($spacing-unit / 6);
+    right: $spacing-unit / 2;
+    padding: ($spacing-unit / 4);
+    background-color: transparentize($background, 0.25);
+    color: $foreground;
+    a {
+      text-decoration: none;
+      color: $flash1;
+    }
   }
- 
+
+
 }
 .post-newest {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   @include on-tablet {
-    min-height: 400px;
     .post-image {
       height: 100%;
     }
@@ -81,11 +86,7 @@
     .post-title {
       @include relative-font-size(2.0);
     }
-  }
-  @include on-laptop {
-    .post-title {
-      @include relative-font-size(2.4);
-    }
+
   }
 }
 .post-featured {
@@ -104,3 +105,4 @@
   display: block;
   padding: ($spacing-unit / 3);
 }
+
