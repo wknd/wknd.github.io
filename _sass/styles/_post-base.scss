@@ -21,6 +21,13 @@
 .post-content {
   color: $foreground;
   padding: $spacing-unit / 2;
+
+  h1, h2, h3, h4, h5, h6,
+  p, blockquote, pre,
+  ul, ol, dl, figure {
+    margin-bottom: $spacing-unit / 2;
+  }
+
   p {
     padding-top: $spacing-unit / 3;
     padding-bottom: $spacing-unit / 2;
