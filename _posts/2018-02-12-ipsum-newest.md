@@ -73,3 +73,25 @@ return shell_exec("echo $input | $markdown_script");
 
 1. red
 2. green
+
+![image test](/assets/images/global/cross-street_francesco.lorenzetti.jpg)
+this is an image on top of a paragraph  
+the image will be within the paragraph part and is using standard markdown style
+
+
+here the image is included using articleimage.html
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true %}
+
+same here but we specify a height
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="400" %}
+
+this works nicer, wonder if we can make images float nicely so they don't take up so much space and what not
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="400" float="right" %}
+floaty image  
+lets include lots of text  
+texty text text text
+
+so much of the text
+looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooong text
+so long text

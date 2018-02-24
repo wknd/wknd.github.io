@@ -1,0 +1,83 @@
+.article-content {
+  color: $foreground; 
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+
+  p, blockquote, pre,
+  ul, ol, dl {
+    margin: $spacing-unit / 2;
+  }
+  
+  p {
+    padding-top: $spacing-unit / 3;
+    padding-bottom: $spacing-unit / 2;
+  }
+  blockquote {
+    border-left: $flash1;
+    border-left: 5px solid $flash1;
+    background-color: $background;
+    padding: $spacing-unit / 4;
+  }
+  blockquote p {
+    display: inline;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: $spacing-unit / 2;
+  }
+  h1 {
+    @include relative-font-size(2.7);
+    color: $background;
+    background-color: $flash1;
+    text-align: center;
+  }
+  h2 {
+    @include relative-font-size(2.4);
+  }
+  h3 {
+    @include relative-font-size(2.1);
+  }
+  h4 {
+    @include relative-font-size(1.8);
+  }
+  h5 {
+    @include relative-font-size(1.5);
+  }
+  h6 {
+    @include relative-font-size(1.2);
+  }
+  ol {
+    list-style-position: inside;
+  }
+  ul {
+    list-style-position: inside;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+
+  }
+  figure {
+    display: block;
+    box-sizing: border-box;
+    background: $background;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .article-float-img-right {
+    float: right;
+    width: auto;
+    max-width: 50%;
+  }
+}
