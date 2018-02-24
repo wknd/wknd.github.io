@@ -83,15 +83,67 @@ here the image is included using articleimage.html
 {% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true %}
 
 same here but we specify a height
-{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="400" %}
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="400px" %}
+
+
+maybe width is better?
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true width="400px" %}
+
 
 this works nicer, wonder if we can make images float nicely so they don't take up so much space and what not
 
-{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="400" float="right" %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true height="20em" float="right" %}
+
 floaty image  
 lets include lots of text  
 texty text text text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+so much of the text
+so long text
+
+
+moar text
+
+
+
+
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="right" %}
+
+floaty image  
+lets include lots of text  
+texty text text text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 so much of the text
 looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooong text
 so long text
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true width="440px" float="right" %}
+
+floaty image  
+lets include lots of text  
+texty text text text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ooooooooooooooooong text
+
+{% include articleimage.html name="nfHwYkh.jpg" float="left" %}
+stuffs
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="left" width="200px" %}
+
+stuffs with width set
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="left" height="200px" %}
+stuffs with height set
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+---

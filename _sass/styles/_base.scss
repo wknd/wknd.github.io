@@ -40,6 +40,12 @@ body {
   clear: both;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .page-content {
   flex: 1;
   display: inline-block;
