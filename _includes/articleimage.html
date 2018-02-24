@@ -5,9 +5,11 @@
 {%- else -%}
   {%- capture imagePath %}/assets/images/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture -%}
 {%- endif -%}
+  <a href="{{ imagePath }}">
   <img src="{{ imagePath }}"
 {%- if include.alt %} alt="{{ include.alt }}" {% endif -%}
 {%- if include.width %} width="{{ include.width }}" {% elsif include.height %} style="max-height: {{ include.height }};" {% endif %}/>
+  </a>
 {% if include.caption -%}
   <figcaption>{{ include.caption }}</figcaption>
 {%- endif -%}
