@@ -1,14 +1,21 @@
 <div class="clearfix"></div>
-<figure{% if include.float %} class="article-float-img-{{ include.float}}"{% endif %}>
-{%- if include.global -%}
-  {%- capture imagePath %}/assets/images/global/{{ include.name }}{% endcapture -%}
+{% assign rel = include.width | slice: -1 -%}
+{%- if include.width and rel == '%' -%}
+<figure style="max-width: {{ include.width }};"
 {%- else -%}
-  {%- capture imagePath %}/assets/images/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture -%}
+<figure
 {%- endif -%}
-  <a href="{{ imagePath }}">
-  <img src="{{ imagePath }}"
+{%- if include.float %} class="article-float-img-{{ include.float}}" {% endif %}>
+
+{%- if include.global -%}
+  {%- capture imagePath %}global/{{ include.name }}{% endcapture -%}
+{%- else -%}
+  {%- capture imagePath %}posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture -%}
+{%- endif -%}
+  <a href="/assets/images-original/{{ imagePath }}">
+  <img src="/assets/images/{{ imagePath }}"
 {%- if include.alt %} alt="{{ include.alt }}" {% endif -%}
-{%- if include.width %} width="{{ include.width }}" {% elsif include.height %} style="max-height: {{ include.height }};" {% endif %}/>
+{%- if include.width -%}{%- unless rel == '%' %} style="max-width:{{ include.width }}" {% endunless -%}{%- endif -%}{%- if include.height %} style="max-height: {{ include.height }};" {% endif %}/>
   </a>
 {% if include.caption -%}
   <figcaption>{{ include.caption }}</figcaption>
