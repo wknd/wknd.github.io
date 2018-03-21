@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "ipsum newest"
-date:   2018-02-12 18:29:09 +0100
+title:  "finished basic layout"
+date:   2018-02-25 18:58:09 +0100
 categories: blog
 image: 
   name:   "nfHwYkh.jpg"
   global: false
-author: weekend
-
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
