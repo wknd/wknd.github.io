@@ -1,0 +1,3 @@
+[submodule "site-resources"]
+	path = site-resources
+	url = git@github.com:wknd/site-resources.git

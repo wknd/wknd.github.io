@@ -24,11 +24,6 @@ twitter_username:
 #collections settings
 #collections_dir: collections # setting the collections_dir does not seem to work as advertised
 
-collections:
-  knowledge_base:
-    output: true
-    permalink: /:collection/:path
- 
 defaults:
  - 
   scope:
@@ -46,6 +41,13 @@ markdown: kramdown
 #theme: minima, removed gem-based theme, made it local
 plugins:
   - jekyll-feed
+
+# stuff to make resources external
+layouts: /resources/_layouts
+sass: 
+    sass_dir: /resources/_sass
+includes_dir: /resources/_includes
+data_dir: /resources/_data
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
