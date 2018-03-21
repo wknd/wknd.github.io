@@ -43,11 +43,11 @@ plugins:
   - jekyll-feed
 
 # stuff to make resources external
-layouts: /resources/_layouts
+layouts_dir: /site-resources/_layouts
 sass: 
-    sass_dir: /resources/_sass
-includes_dir: /resources/_includes
-data_dir: /resources/_data
+    sass_dir: /site-resources/_sass
+includes_dir: /site-resources/_includes
+data_dir: /site-resources/_data
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
