@@ -62,15 +62,15 @@ In the end I only used 1 of the bright colours for extra flash while using its f
 For the actual layout I took some more inspiration from [neondystopia](https://www.neondystopia.com/). I really liked the idea of having a grid layout, with the newest post being extra large, and a large featured post.
 
 # responsive design
-{% include articleimage.html name="main-page-med.png" global=false %}
+{% include articleimage.html name="main-page-med.png" global="local" %}
 <br />
-{% include articleimage.html name="main-page-large.png" global=false float="right" height="10em" %}
+{% include articleimage.html name="main-page-large.png" global="local" float="right" height="10em" %}
 Since [css grid](https://www.mozilla.org/en-US/developer/css-grid/) is now available for all major browsers, I decided to use it, which made the whole process pretty easy. Combined with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) the amount of code required to have everything in the correct place is very minimal.
 I start off with a layout designed for small screens, and then work my way up to tablet size, and then laptop size.
 
 The phone layout is 1 column wide, the tablet layout is 2 columns wide and in desktop mode it is 3 columns wide.
 
-{% include articleimage.html name="main-page-smallest.png" global=false height="20em" %}
+{% include articleimage.html name="main-page-smallest.png" global="local" height="20em" %}
 
 [Jekyll](https://jekyllrb.com/) supports [sass/scss](https://sass-lang.com/) out of the box and the default jekyll theme ([minima](https://github.com/jekyll/minima)) that I loosely used as a base is built using scss. So naturally I decided to use it as well.  
 I've never written a lot of css beyond what I've been forced to use to get something done, so I can't speak to how much easier it is than plain css. But so far its made writing all these styles a pleasant experience.
@@ -112,8 +112,8 @@ The ```.post-list``` is 1, 2 or 3fr wide depending on the screen size. And then 
 To easily create projects in different repositories, all the global stuff is housed in its [own repository](https://github.com/wknd/site-resources/). You can checkout all the css [here](https://github.com/wknd/site-resources/tree/master/_sass).
 
 # fast loading
-{% include articleimage.html name="pagespeed-phone.png" global=false %}
-{% include articleimage.html name="pagespeed-desktop.png" global=false float="left" width="30%" %}
+{% include articleimage.html name="pagespeed-phone.png" global="local" %}
+{% include articleimage.html name="pagespeed-desktop.png" global="local" float="left" width="30%" %}
 No one wants to wait a long time for a page to load. People need adblockers and other add-ons to filter out the crud on an average page just to make browsing bearable.  
 I don't want to wait for my own site to load so I decided to make it go as fast as I can possibly make it. 
 
@@ -142,7 +142,7 @@ I'm using the standard [image magick](https://www.imagemagick.org) tools that ca
 Using his parameters I wrote a little [shell script](https://github.com/wknd/wknd.github.io/blob/master/minifyimages.sh) that'll go through all my images and minimize the ones that haven't been done yet. I just need to remember to run this whenever I add a new image.
 
 ### caching
-{% include articleimage.html name="cloudflare-ttl.png" global=false float="right" %}
+{% include articleimage.html name="cloudflare-ttl.png" global="local" float="right" %}
 Another requirement for [google pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=secur.ity-pro.be) to give a good score is properly utilizing caching. Loading an image or css for the first time can take seconds, but loading it a second time should take no time at all!
 
 However I have no control over the webserver to set the proper caching headers.
