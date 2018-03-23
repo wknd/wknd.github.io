@@ -139,7 +139,7 @@ An additional requirement to get 100% on the pagespeed test, was minimizing my i
 
 I'm using the standard [image magick](https://www.imagemagick.org) tools that came in Ubuntu 16.04 (convert, mogrify) to minimize my images. I make sure to also keep the original image, and always link back to that one. But all images that are displayed directly on a page are the minimized versions.  To find proper settings that seem most optimal for most images I followed the advice of [Dave Newton](https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick/).
 
-Using his parameters I wrote a little [shell script](https://github.com/wknd/wknd.github.io/blob/master/minifyimages.sh) that'll go through all my images and minimize the ones that haven't been done yet. I just need to remember to run this whenever I add a new image.
+Using his parameters I wrote a little [shell script](https://github.com/wknd/site-resources/blob/master/minifyimages.sh) that'll go through all my images and minimize the ones that haven't been done yet. I just need to remember to run this whenever I add a new image.
 
 ### caching
 {% include articleimage.html name="cloudflare-ttl.png" global="local" float="right" %}
