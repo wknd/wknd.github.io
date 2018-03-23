@@ -21,6 +21,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 
+background-image: "/assets/images/global/cross-street_francesco.lorenzetti.jpg"
+
+
 #collections settings
 #collections_dir: collections # setting the collections_dir does not seem to work as advertised
 
