@@ -18,7 +18,7 @@ email: weekend@hackthissite.org
 author: weekend
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://secur.ity-pro.be" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 
 background-image: "/assets/images/global/cross-street_francesco.lorenzetti.jpg"
