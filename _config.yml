@@ -38,7 +38,7 @@ defaults:
       global: true
 
 logo:
-  location: /assets/logo.png
+  location: /assets/images/logo.png
   width: 426
   height: 60
 
