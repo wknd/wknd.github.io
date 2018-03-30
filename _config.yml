@@ -37,7 +37,10 @@ defaults:
       name: "l24Wzpq.jpg"
       global: true
 
-
+logo:
+  location: /assets/logo.png
+  width: 426
+  height: 60
 
 # Build settings
 markdown: kramdown
