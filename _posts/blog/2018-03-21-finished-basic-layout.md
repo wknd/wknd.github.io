@@ -47,7 +47,7 @@ But then what makes the site layout cyberpunk and not just another dark or neon 
 
 It made me conclude that the defining factor is to not just use some dark theme with some flashy highlights, but to incorporate images into the website that are cyberpunk themed themselves. So my first decision was to make sure my layout played nice with images, and force myself to use an image for every single post.
 
-{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="right" height="30em" %}
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="right" width="800px" height="30em" %}
 
 #### images
 As a background image I ended up going with "cross-street" by [Francesco Lorenzetti](https://www.artstation.com/frank_lorenzetti). I think its a wonderful image and it's almost a shame it'll be mostly hidden by the content. Not to mention that most of it won't be visible if you aren't using a screen in portrait mode. 
