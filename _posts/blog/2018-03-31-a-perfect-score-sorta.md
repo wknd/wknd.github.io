@@ -32,7 +32,7 @@ Additionally, which I forgot to mention last post, I have implemented the late l
 I've also implemented the same responsive image strategy for images inside posts. It isn't totally automatic, for images that have a height set you should also pass along a width for best results.
 
 Together these changes give me (almost) a perfect score on [google pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=secur.ity-pro.be).  
-The only thing it complains about is further compressing one image ```Compressing https://secur.ity-pro.be/…shed-basic-layout/cloudflare-ttl-480.png could save 4.2KiB (14% reduction).```. But that image at that size is somewhat of an anomaly. It is actually bigger than some images at a larger size and no matter what I do I can't seem to fix that.
+The only thing it complains about is further compressing one image: "```Compressing https://secur.ity-pro.be/…shed-basic-layout/cloudflare-ttl-480.png could save 4.2KiB (14% reduction)```". But that image at that size is somewhat of an anomaly. It is actually bigger than some images at a larger size and no matter what I do I can't seem to fix that.
 
 Perhaps I should make the script start converting the largest sizes and if the next size down is bigger in filesize, just use the previous size image for it instead. Or maybe I should just accept that sometimes images are weird and I can live with 1 point less on a single page. (though noted, if I didn't specify width on a bunch of images on that page, I would have only gotten a score of 24 even though those images were smaller than not making them responsive at all.)
 
