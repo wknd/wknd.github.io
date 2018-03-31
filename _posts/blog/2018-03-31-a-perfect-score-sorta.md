@@ -10,7 +10,7 @@ image:
 I added some functionality to my image minify [script](https://github.com/wknd/site-resources/blob/master/minifyimages.sh) so that it now also generates resized images that are cropped to fit in titles or index pages. This means the image selected will be more likely to match correctly. 
 
 Additionally, which I forgot to mention last post, I have implemented the late loading of css.
-{% highlight javascript %}
+{% highlight html %}
 <noscript id="deferred-styles">
  <link rel="stylesheet" type="text/css" href="{% raw %}{{ sheet }}{% endraw %}"/>
 </noscript>
