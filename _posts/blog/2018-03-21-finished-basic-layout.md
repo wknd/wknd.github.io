@@ -47,7 +47,7 @@ But then what makes the site layout cyberpunk and not just another dark or neon 
 
 It made me conclude that the defining factor is to not just use some dark theme with some flashy highlights, but to incorporate images into the website that are cyberpunk themed themselves. So my first decision was to make sure my layout played nice with images, and force myself to use an image for every single post.
 
-{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="right" width="800px" height="30em" %}
+{% include articleimage.html name="cross-street_francesco.lorenzetti.jpg" global=true float="right" width="480px" height="30em" %}
 
 #### images
 As a background image I ended up going with "cross-street" by [Francesco Lorenzetti](https://www.artstation.com/frank_lorenzetti). I think its a wonderful image and it's almost a shame it'll be mostly hidden by the content. Not to mention that most of it won't be visible if you aren't using a screen in portrait mode. 
@@ -64,13 +64,13 @@ For the actual layout I took some more inspiration from [neondystopia](https://w
 # responsive design
 {% include articleimage.html name="main-page-med.png" global="local" %}
 <br />
-{% include articleimage.html name="main-page-large.png" global="local" float="right" height="10em" %}
+{% include articleimage.html name="main-page-large.png" global="local" float="right" width="320px" height="10em" %}
 Since [css grid](https://www.mozilla.org/en-US/developer/css-grid/) is now available for all major browsers, I decided to use it, which made the whole process pretty easy. Combined with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) the amount of code required to have everything in the correct place is very minimal.
 I start off with a layout designed for small screens, and then work my way up to tablet size, and then laptop size.
 
 The phone layout is 1 column wide, the tablet layout is 2 columns wide and in desktop mode it is 3 columns wide.
 
-{% include articleimage.html name="main-page-smallest.png" global="local" width="480px" height="20em" %}
+{% include articleimage.html name="main-page-smallest.png" global="local" width="320px" height="20em" %}
 
 [Jekyll](https://jekyllrb.com/) supports [sass/scss](https://sass-lang.com/) out of the box and the default jekyll theme ([minima](https://github.com/jekyll/minima)) that I loosely used as a base is built using scss. So naturally I decided to use it as well.  
 I've never written a lot of css beyond what I've been forced to use to get something done, so I can't speak to how much easier it is than plain css. But so far its made writing all these styles a pleasant experience.
