@@ -70,7 +70,7 @@ I start off with a layout designed for small screens, and then work my way up to
 
 The phone layout is 1 column wide, the tablet layout is 2 columns wide and in desktop mode it is 3 columns wide.
 
-{% include articleimage.html name="main-page-smallest.png" global="local" height="20em" %}
+{% include articleimage.html name="main-page-smallest.png" global="local" width="480px" height="20em" %}
 
 [Jekyll](https://jekyllrb.com/) supports [sass/scss](https://sass-lang.com/) out of the box and the default jekyll theme ([minima](https://github.com/jekyll/minima)) that I loosely used as a base is built using scss. So naturally I decided to use it as well.  
 I've never written a lot of css beyond what I've been forced to use to get something done, so I can't speak to how much easier it is than plain css. But so far its made writing all these styles a pleasant experience.
@@ -163,4 +163,3 @@ Future updates on my todo list include but aren't limited to:
 *   add metadata to images, and store that efficiently
 *   add support for single posts to have multiple authors
 *   support pagination on the index
-
