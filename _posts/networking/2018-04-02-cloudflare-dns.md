@@ -68,3 +68,5 @@ run_rc_command "$1"
 {% endhighlight %}
 
 Then all that was left to do was service dnscryptproxy start
+
+Future tweaks will likely include running dnscrypt-proxy as a different user, and exploring the possibility to remove Unbound from the loop. 
