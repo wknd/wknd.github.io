@@ -21,7 +21,7 @@ We'll find out in the future if cloudflare is as trustworthy as the volunteer dn
 
 ### My setup
 
-As mentioned above, I'm going to stick with [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy), just upgrade to the newer version and use cloudflare as the target server. I'll also keep [Unbound](https://www.unbound.net/) in front of it for caching and changing some dns results to local ip's (though the new dnscrypt-proxy could probably handle this part too).
+As suggested above, I'm going to stick with [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy), just upgrade to the newer version and use cloudflare as the target server. I'll also keep [Unbound](https://www.unbound.net/) in front of it for caching and changing some dns results to local ip's (though the new dnscrypt-proxy could probably handle this part too).
 
 The slight problem with this is that the new dnscrypt-proxy doesn't have a freebsd package or port. Though they do provide binaries for FreeBSD, its install command doesn't work ([due to an upstream package](https://github.com/kardianos/service/issues/98)) and has to be done manually (looking a bit at their [pfsense installation instructions](https://github.com/jedisct1/dnscrypt-proxy/wiki/Installation-pfsense) for inspiration). 
 
