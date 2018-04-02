@@ -16,7 +16,7 @@ This allowed me to keep my dns queries private from my ISP and allowed me to eas
 However since I was using the older version of [dnscrypt](https://dnscrypt.info/) it seemed the amount of available proxies to use was dwindling and they were getting very very slow (5+ seconds sometimes!). So obviously it was time for a new solution. 
 
 Since I initially set this up, [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy) has released a version 2. Which not only supports the dnscrypt protocol, but also [DNS-Over-HTTPs (DoH)](https://en.wikipedia.org/wiki/DNS_over_HTTPS). And since the [Cloudflare DNS service](https://1.1.1.1/) supports DoH it seemed an ideal combination to get supper fast DNS resolution, stay uncensored AND keep my privacy.  
-An alternative client would be [facebooks doh-proxy](https://facebookexperimental.github.io/doh-proxy/) tools. But although they release some nice opensource tools, I'd rather not use anything made by facebook if I can help it.  
+An alternative client would be [facebooks doh-proxy](https://facebookexperimental.github.io/doh-proxy/) tools. But although they release some nice opensource tools, I'd rather not use anything made by facebook if I can help it. 
 We'll find out in the future if cloudflare is as trustworthy as the volunteer dnscrypt proxies I used before, but they are definitely going to be a lot faster.
 
 ### My setup
