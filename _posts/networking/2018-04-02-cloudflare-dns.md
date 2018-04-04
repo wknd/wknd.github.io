@@ -5,9 +5,10 @@ date:   2018-04-02 19:00:00 +0100
 last-modified: 2018-04-02 19:00:00 +0100
 categories: networking
 image: 
-  name: "networkswitch"
-  file: "networkswitch.jpg"
+  name: "messy ethernet switch"
+  file: "messy-eth-switch.jpg"
   global: "local"
+  license: CC0
 ---
 Yesterday [cloudflare](https://www.cloudflare.com/) [announced](https://blog.cloudflare.com/announcing-1111/) their new privacy-first consumer [DNS service](https://1.1.1.1/). Announcing it on April fools day was a bit suspicious but it made me re-evaluate my own home dns situation. 
 

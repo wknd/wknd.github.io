@@ -13,38 +13,45 @@ images:
   main-page-med:
     file: "main-page-med.png"
     global: local
-    name: "main page medium size"
     description: "the main page as viewed from a tablet"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   main-page-large:
     file: "main-page-large.png"
     global: local
-    name: "main page large size"
     description: "the main page as viewed from a laptop"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   main-page-smallest:
     file: "main-page-smallest.png"
     global: local
-    name: "main page smallest size"
     description: "the main page as viewed from a phone"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   main-page-large:
     file: "main-page-large.png"
     global: local
-    name: "main page large size"
     description: "the main page as viewed from a laptop"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   pagespeed-phone:
     file: "pagespeed-phone.png"
     global: local
-    name: "page speed phone"
     description: "google page speed result on a phone"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   pagespeed-desktop:
     file: "pagespeed-desktop.png"
     global: local
-    name: "page speed desktop"
     description: "google page speed result on a desktop"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
   cloudflare-ttl:
     file: "cloudflare-ttl.png"
     global: local
-    name: "cloudflare ttl"
     description: "cloudflare menu to set browser cache ttl"
+    creator: weekend
+    creatorurl: "https://secur.ity-pro.be/"
 
 
 ---
