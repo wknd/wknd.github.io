@@ -4,4 +4,4 @@
 $background-img: "{{ site.background-image }}";
 $on-tablet:        {{ site.on-tablet }}px !default;
 $on-laptop:        {{ site.on-laptop }}px !default;
-@import "post";
+@import "article";
