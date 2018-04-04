@@ -4,7 +4,7 @@ title:  "a perfect score, sorta"
 date:   2018-03-31 18:00:00 +0100
 categories: blog site
 image: 
-  name:   "hacker-room.jpg"
+  name:   "hacker-room"
   global: true
 ---
 I added some functionality to my image minify [script](https://github.com/wknd/site-resources/blob/master/minifyimages.sh) so that it now also generates resized images that are cropped to fit in titles or index pages. This means the image selected will be more likely to match correctly. 

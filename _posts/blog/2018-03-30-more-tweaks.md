@@ -4,7 +4,7 @@ title:  "more tweaks"
 date:   2018-03-30 21:00:00 +0100
 categories: blog site
 image: 
-  name:   "hacker-room.jpg"
+  name:   "hacker-room"
   global: true
 ---
 I made several tweaks to the site. Some improvements and some made everything worse.

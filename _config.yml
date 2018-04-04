@@ -34,7 +34,7 @@ defaults:
     type: "posts"
   values:
     image:
-      name: "l24Wzpq.jpg"
+      name: "android-hunting"
       global: true
 
 logo:
