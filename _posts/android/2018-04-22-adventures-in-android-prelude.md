@@ -56,7 +56,7 @@ The moto G4 seemed like the only match for those specifications at the time, the
 
 Eventually motorola did release an update to android 7.0 (although much later than when they released in India), and I do get regular security updates (though not as frequent as nexus devices). And right now after some outrage they also prommised to give this phone an update to 8.0.
 
-All in all, I'm pretty happy about this phone. When asked to recommend a phone to people, I always recommend its upgrade (the G5) or a new nokia phone (they seem to be keeping their update and no bloatware promise even better than motorola). The only downside is its lack of compass and so it isn't compatible with things like [google cardboard](https://vr.google.com/cardboard/) (no compass means your gyro will drift and it can't detect magnetic the seal either).
+All in all, I'm pretty happy about this phone. When asked to recommend a phone to people, I always recommend its upgrade (the G5) or a new nokia phone (they seem to be keeping their update and no bloatware promise even better than motorola). The only downside is its lack of compass and so it isn't compatible with things like [google cardboard](https://vr.google.com/cardboard/) (no compass means your gyro will drift and it can't detect the magnetic seal either).
 
 ## The Future
 After the previous paragraphs you'll understand that I am actually happy with the phone I have now. I have no interest (or budget) to buy a new one (remember, I kept the first android phone running for 6 years!). 
