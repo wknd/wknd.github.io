@@ -19,7 +19,7 @@ author: weekend
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://secur.ity-pro.be" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username: securityprobe
 
 background-image: "/assets/images/global/cross-street_francesco.lorenzetti.jpg"
 
