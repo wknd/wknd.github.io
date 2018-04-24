@@ -6,9 +6,11 @@ last-modified: 2018-04-24 12:00:00 +0200
 categories: blog android nethunter
 featured: false
 image: 
+  name: false
   file:   "lineageOS-overlay2.jpg"
   description: "unknown cyborg image with lineage OS text overlay"
   global: local
+  creator: weekend
   
 images: 
   screenshot-newkernel:
