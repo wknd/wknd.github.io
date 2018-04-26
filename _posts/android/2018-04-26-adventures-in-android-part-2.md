@@ -15,7 +15,7 @@ head-image:
 ---
 Time for the real magic, tweaking the kernel for that extra functionality. I'll try doing it in stages with just small tweaks and test them out. First up are the [HID patches for keyboard and mouse](https://github.com/pelya/android-keyboard-gadget).
 
-### Patching
+## Patching
 
 I started off this patching effort by looking at the already existing patches. I was hoping by picking something by the same manufacturer and same kernel version I wouldn't have to do much.
 
@@ -52,7 +52,7 @@ So I was defining function prototypes in ```f_hid.h```, and then defining them i
 
 To fix it I decided to not create a ```f_hid.h``` file(just like in the original code) and to not build a separate ```f_hid.o``` file. End result: a smaller patch is applied, without changing the ```MakeFile``` or creating a new ```f_hid.h``` file.
 
-### testing
+## Testing
 After all that and waiting forever for it to build again, I got no errors. I packaged up the kernel in a zip using the [nethunter installer](https://github.com/offensive-security/kali-nethunter/blob/master/nethunter-installer/README.md) like before and tried it out. This time the [USB keyboard app](https://play.google.com/store/apps/details?id=remote.hid.keyboard.client) got a bit further, but it still wouldn't let me use it as a keyboard or mouse. It was stuck on:
 ```
 opening /dev/hidg0 opening /dev/hidg1
@@ -64,7 +64,7 @@ athene:/ # setenforce 0
 {% endhighlight %}
 And now the app works, I could use it as a mouse and as a keyboard (though my machine not being qwerty and it of course just sending keycodes made it a bit annoying to type).
 
-### Improvements
+## Improvements
 I need to keep in mind when I have created and tested all my desired patches, that I have to set proper selinux stuff. I don't want to manually set these things and I don't want to allow all things just to be able to use some of my extra functionality. In fact, I don't even want to be able to use ```setenforce 0``` via adb or locally at all. So I should tweak my build type too at some point (no more ```-userdebug``` or ```-eng``` builds when this is all over!).
 
 All the patches will go in [this repo](https://github.com/wknd/android_kernel_motorola_msm8952-patches), and if I can I'll also submit them upstream to the respective projects. But just because I think the syntax highlighting of diff's are pretty, heres the patch:
