@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "adventures in android flashing part 2"
-date:   2018-04-25 01:00:00 +0200
-last-modified: 2018-04-25 01:00:00 +0200
+date:   2018-04-26 08:00:00 +0200
+last-modified: 2018-04-26 08:00:00 +0200
 categories: blog android nethunter
 featured: false
 head-image: 
