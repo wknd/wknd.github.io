@@ -3,7 +3,7 @@ layout: post
 title:  "more tweaks"
 date:   2018-03-30 21:00:00 +0100
 categories: blog site
-image: 
+head-image: 
   name:   "hacker-room"
   global: true
 ---

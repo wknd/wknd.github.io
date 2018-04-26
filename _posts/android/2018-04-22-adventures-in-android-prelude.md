@@ -5,7 +5,7 @@ date:   2018-04-22 12:00:00 +0200
 last-modified: 2018-04-22 23:00:00 +0200
 categories: blog android nethunter
 featured: true
-image: 
+head-image: 
   name:   "scifi-alley"
   global: true
   

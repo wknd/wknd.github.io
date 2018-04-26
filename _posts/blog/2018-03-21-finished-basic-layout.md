@@ -5,7 +5,7 @@ date:   2018-03-21 21:00:00 +0100
 last-modified: 2018-03-31 13:00:00 +0100
 categories: blog site
 featured: true
-image: 
+head-image: 
   name:   "hacker-room"
   global: true
   

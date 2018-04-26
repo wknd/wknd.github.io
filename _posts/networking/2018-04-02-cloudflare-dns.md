@@ -4,7 +4,7 @@ title: "cloudflare dns"
 date:   2018-04-02 19:00:00 +0100
 last-modified: 2018-04-02 19:00:00 +0100
 categories: networking
-image: 
+head-image: 
   name: "messy ethernet switch"
   file: "messy-eth-switch.jpg"
   global: "local"
