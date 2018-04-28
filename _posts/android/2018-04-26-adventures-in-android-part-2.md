@@ -6,11 +6,8 @@ last-modified: 2018-04-26 08:00:00 +0200
 categories: blog android nethunter
 featured: false
 head-image: 
-  name: false
-  file: "building-kernel.png"
-  description: "end of kernel build with kali nethunter logo"
-  global: local
-  creator: weekend
+  name: ewaste
+  global: global
   
 ---
 Time for the real magic, tweaking the kernel for that extra functionality. I'll try doing it in stages with just small tweaks and test them out. First up are the [HID patches for keyboard and mouse](https://github.com/pelya/android-keyboard-gadget).
