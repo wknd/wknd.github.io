@@ -23,6 +23,8 @@ twitter_username: securityprobe
 
 background-image: "/assets/images/global/cross-street_francesco.lorenzetti.jpg"
 
+paginate: 9
+paginate_path: /page:num/
 
 #collections settings
 #collections_dir: collections # setting the collections_dir does not seem to work as advertised
