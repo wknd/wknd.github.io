@@ -13,8 +13,9 @@ head-image:
   creator: weekend
   
 ---
-As you may know I'm an administrator of [hackthissite.org](https://www.hackthissite.org)(also referred to as HTS). The current ongoing project at HTS is moving the main site over to a new server. The current code base is pretty ancient and hacked together so this is also a chance to improve on that and make it easier to update in the future.  
-The major effort to change HTS is splitting the project into separate components so they can be reworked individually. And the first step in that process is creating a Single Sign On(SSO) system so users can authenticate in one place and be logged in on all components.  
+As you may know I'm an administrator of [hackthissite.org](https://www.hackthissite.org) (also referred to as HTS). The current ongoing project at HTS is moving the main site over to a new server. The current code base is pretty ancient and hacked together so this is also a chance to improve on that and make it easier to update in the future.
+
+The major effort to change HTS is splitting the project into separate components so they can be reworked individually. And the first step in that process is creating a Single Sign On (SSO) system so users can authenticate in one place and be logged in on all components.  
 This post is about updating and revamping the forum SSO.
 
 Like the rest of the code, the current forums are also old and will need updating for it to work on a new system. To do that I'll be starting from a fresh [phpBB](https://www.phpbb.com) installation and creating a new authentication extension for it.  
@@ -70,7 +71,7 @@ The login form also gets used to verify your identity again if you go to the adm
 
 First important bit is the autologin method, this gets run whenever a user autologins. So here we will verify that the user is signed in on our SSO platform, and return the relevant row for that user in the db. If the user isn't yet created on the forum, we first create it and then return the database row.
 
-One problem with this is that despite the name and description(it gets run if a user creates a new session), it's values are ignored unless there is another cookie already set which enables autologin. This cookie would normally be set when a user logs in and checks the "remember me" checkbox. So if a user is logged in to our SSO we set that cookie before returning with:
+One problem with this is that despite the name and description (it gets run if a user creates a new session), it's values are ignored unless there is another cookie already set which enables autologin. This cookie would normally be set when a user logs in and checks the "remember me" checkbox. So if a user is logged in to our SSO we set that cookie before returning with:
 {% highlight php %}{% raw %}
 $this->user->set_login_key($row['user_id'], false, false);
 {% endraw %}{% endhighlight %}
@@ -108,7 +109,7 @@ As I'm writing this I figure maybe we can just create the session in all cases a
 *    If a user isn't signed on SSO and goes to the forum, he'll get a new forum session. When he clicks login the user will get redirected to our SSO page.
 *    If a user is signed on SSO and goes to the forum, he'll get a new forum session. When he clicks login the user will get logged in (and if he doesn't exist yet on the forum, his account will get created).
 *    When a user signs off on the forum, he currently only signs off on the forum and we don't feed this back to the SSO system (maybe we optionally will?)
-*    When an admin goes to the admin panel, he will get a login screen to verify his identiy. We ignore whatever he inputs there and log him in based on SSO(future may ask for 2FA?).
+*    When an admin goes to the admin panel, he will get a login screen to verify his identiy. We ignore whatever he inputs there and log him in based on SSO (future may ask for 2FA?).
 
 ## Improvements
 There are three main points that need improving:
