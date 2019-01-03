@@ -52,7 +52,7 @@ Super standard stuff, it didn't require a million 3rd party libraries (node.js) 
 
 We're interested in the user registration part of this code. It is taking the class name and username concatenated together and encrypting the result. To encrypt, it is generating a unique keystream for each message and [XOR](https://en.wikipedia.org/wiki/Exclusive_or)ing that with the plaintext message.
 
-If all that sounds familiar, thats because it is the basic working principle of a block cipher in [counter mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)). Useful for turning a block cipher into a stream cipher.
+If all that sounds familiar, thats because it is the basic working principle of a block cipher in [counter mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_(CTR)). Useful for turning a block cipher into a stream cipher. 
 
 ### Understanding the keystream
 
