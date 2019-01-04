@@ -188,7 +188,6 @@ $${% raw %} 36^{32} = 6.334028666\times10^{49} \text{ combinations} \\
 {% endraw %}$$  
 Even if you have a computer 10, 100 or 1000 times faster than the example 1 million hashes per second it'd still take way too long. Compared to the $$36\times32=1152$$ attempts max it'd take to crack these hashes.
 
-######
 Timing attacks aren't hard to prevent once you know how they work. So just remember this challenge and don't make these kinds of silly mistakes.
 
 ###### Rust seems okay
