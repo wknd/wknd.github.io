@@ -5,13 +5,11 @@ date:   2019-01-03 13:00:00 +0100
 categories: ctf hackthissite ccc DANCEd Ultra_Secret
 math: true
 head-image: 
-    name: "Chaos Computer Club"
-    file:   "ccc2.png"
-    description: "Unknown Sci-fi street with Chaos Computer Club logo"
+    name: "Time"
+    file:   "angelique-shelley-10.jpg"
     global: local
-    creator: "unknown"
-    creator: "Unknown(original) and weekend(modification)"
-    creatorurl: "https://imgur.com/gallery/53FWk"
+    creator: "Angelique Shelley"
+    creatorurl: "https://www.artstation.com/artwork/ZV0Xw"
     license: CC-BY-SA
 
 ---
