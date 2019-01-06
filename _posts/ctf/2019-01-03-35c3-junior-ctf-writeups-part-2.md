@@ -13,7 +13,7 @@ head-image:
     license: CC-BY-SA
 
 ---
-This writeup is going to be very short because once you know the flaw all you need to solve it is some time.
+This writeup is going to be very short because once you know the flaw all you need to solve it is some time. This writeup and others can also be found in our [CTF writeup repo](https://github.com/HackThisSite/CTF-Writeups/tree/master/2018/35C3-Junior/).
 
 # Challenge 2: Ultra Secret
 We're given the following description:

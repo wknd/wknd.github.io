@@ -28,7 +28,7 @@ images:
 ---
 It's a new year and that means there has been another [Chaos Communication Congress](https://en.wikipedia.org/wiki/Chaos_Communication_Congress) organized by the [Chaos Computer Club](https://www.ccc.de/en/).  
 It is becoming a tradition for our team over at [HackThisSite](https://hackthissite.org) to take part in the [junior ctf](https://archive.aachen.ccc.de/junior.35c3ctf.ccc.ac/) that takes place during the congress. Last year we dropped [from first to second](https://archive.aachen.ccc.de/junior.34c3ctf.ccc.ac/submissions/19/index.html) in the very last minute, this year we finished [7th](https://archive.aachen.ccc.de/junior.35c3ctf.ccc.ac/submissions/397/index.html).  
-This is the first of two writeups I'll make for this CTF.
+This is the first of two writeups I'll make for this CTF. This writeup and others can also be found in our [CTF writeup repo](https://github.com/HackThisSite/CTF-Writeups/tree/master/2018/35C3-Junior/).
 
 # Challenge 1: DANCEd
 DANCEd was the least solved crypto challenge, and the first challenge I took.  
