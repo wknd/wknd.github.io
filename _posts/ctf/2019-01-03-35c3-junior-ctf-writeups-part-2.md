@@ -2,6 +2,7 @@
 layout: post
 title:  "35c3 junior ctf writeups part 2"
 date:   2019-01-03 13:00:00 +0100
+last-modified: 2019-01-06 17:00:00 +0100
 categories: ctf hackthissite ccc DANCEd Ultra_Secret
 math: true
 head-image: 
