@@ -11,7 +11,7 @@ head-image:
     global: local
     creator: "Angelique Shelley"
     creatorurl: "https://www.artstation.com/artwork/ZV0Xw"
-    license: CC-BY-SA
+    license: permission-angelique-shelley
 
 ---
 This writeup is going to be very short because once you know the flaw all you need to solve it is some time. This writeup and others can also be found in our [CTF writeup repo](https://github.com/HackThisSite/CTF-Writeups/tree/master/2018/35C3-Junior/).
